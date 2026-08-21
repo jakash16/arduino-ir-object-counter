@@ -16,3 +16,4 @@ Manual object counting in entryways or assembly lines is prone to human error. T
 * **Control:** Push Button (Internal Pull-Up configured)
 * **Breadboard & Jumper Wires**
 
+<img width="4096" height="3072" alt="IMG_20260821_195838429_HDR_PORTRAIT" src="https://github.com/user-attachments/assets/c50215a2-ab32-4c1a-9276-49322d5e6c0a" />
