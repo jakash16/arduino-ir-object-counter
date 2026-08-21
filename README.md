@@ -16,13 +16,3 @@ Manual object counting in entryways or assembly lines is prone to human error. T
 * **Control:** Push Button (Internal Pull-Up configured)
 * **Breadboard & Jumper Wires**
 
-
-##  Challenges Faced & Solutions
-1. **Signal Debouncing:** Rapid/flickering object movements caused double-counting. Solved using non-blocking software debouncing with `millis()`.
-2. **I2C LCD Initialization:** Encountered compilation and block display issues, resolved by validating the address (`0x27`) and including proper Wire libraries.
-
----
-
-##  Future Scope
-* Adding ESP32/Wi-Fi support to push count data live to a web app or cloud database.
-* Integrating a buzzer module for audio feedback on every increment.
