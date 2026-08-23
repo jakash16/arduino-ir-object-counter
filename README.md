@@ -22,15 +22,15 @@ Manual object counting in entryways or assembly lines is prone to human error. T
 * 3. Another problem was my sensor was not sensing anything. Turns out it has a potentiometer on board that I had to manually change. That affects the sensitivity of the sensor. That was quite interesting.
 
 ## My Approach
-My approach was to build a reliable counter that can be used in real conveyor-belt and footfall counting systems which minimizes human error.
+* My approach was to build a reliable counter that can be used in real conveyor-belt and footfall counting systems which minimizes human error.
 The brain of this setup was the Arduino Uno R3. This is a microcontroller board that runs C++ code. It reads the input signals from the sensor, increments the count and sends the output to the LCD screen all under a second.
-The sensor I used for this project was the FC-51 IR Obstacle Avoidance Sensor. This is an infrared sensor with two LED like bulbs on the front. The clear LED is an IR transmitter and the dark LED is an IR receiver. The transmitter constantly emits invisible infrared light. When an
-object passes in front, light bounces back into the receiver and the sensor internally connects its OUT pin straight to ground. This provides information to the arduino that there is an object passing through. This pattern is called active-low logic
-The output was displayed on a 16 x 2 LCD Display with the I2C adapter. I used an I2C adapter, because directly connecting it requires at least 6 to 10 digital pins on the Arduino. Using the adapter reduces it to two communications pins.
+* The sensor I used for this project was the FC-51 IR Obstacle Avoidance Sensor. This is an infrared sensor with two LED like bulbs on the front. The clear LED is an IR transmitter and the dark LED is an IR receiver. The transmitter constantly emits invisible infrared light. When anobject passes in front, light bounces back into the receiver and the sensor internally connects its OUT pin straight to ground. This provides information to the arduino that there is an object passing through. This pattern is called active-low logic
+  
+* The output was displayed on a 16 x 2 LCD Display with the I2C adapter. I used an I2C adapter, because directly connecting it requires at least 6 to 10 digital pins on the Arduino. Using the adapter reduces it to two communications pins.
 
 <img width="4096" height="3072" alt="IMG_20260821_195838429_HDR_PORTRAIT" src="https://github.com/user-attachments/assets/c50215a2-ab32-4c1a-9276-49322d5e6c0a" />
 
-Demo Video Link
+## Demo Video Link
 https://drive.google.com/file/d/1cN2AucrXBwCTcP9WOnwoILtZOKSKYtQ1/view?usp=drive_link
 
 
